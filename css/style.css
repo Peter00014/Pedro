@@ -1,0 +1,1326 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
+
+:root {
+  --color-primary: #131010;
+  --color-secundary: #110f0f;
+  --text: "Assistant", sans-serif;
+}
+
+body {
+  /* background: #17202A; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--color-secundary);
+}
+
+.layout_padding {
+  padding: 75px 0;
+}
+
+.layout_padding2 {
+  padding: 45px 0;
+}
+
+.layout_padding2-top {
+  padding-top: 45px;
+}
+
+.layout_padding2-bottom {
+  padding-bottom: 45px;
+}
+
+.layout_padding-top {
+  padding-top: 75px;
+}
+
+.layout_padding-bottom {
+  padding-bottom: 75px;
+}
+
+.custom_heading {
+  color: #030404;
+}
+
+.custom_heading span {
+  color: #ff7a21;
+}
+
+
+/* ? DESCRIPCION DE INDEX PARTE DE ARRIBA */
+.agenda-cita {
+  text-align: center;
+  background-color: #ebf1f2; /* Color de fondo más oscuro */
+  padding: 5px 0;
+}
+
+.agenda-cita p {
+  font-size: 13px; /* Tamaño del texto reducido a 15px */
+  margin: 0; /* Elimina los márgenes predeterminados */
+  padding: 5px; /* Añade espaciado dentro del contenedor */
+  text-align: center; /* Centra el texto */
+  color: #000000; /* Color del texto */
+  font-weight: bold; /* Hacerlo negrita */
+  text-transform: uppercase; /* Convertir a mayúsculas */
+}
+
+/* ? header *//* ? header */
+header {
+  display: flex;
+  justify-content: space-between; /* Espacio entre elementos */
+  align-items: center; /* Alinear verticalmente */
+  background: linear-gradient(to right, #05dbb8, #15ebd2); /* Mejora de colores */
+  color: #ffffff; /* Color del texto */
+  padding: 10px 5px; /* Espaciado interno */
+}
+
+.title_nav {
+  font-size: 1.4rem; /* Ajustar tamaño del título */
+  font-weight: bold; /* Hacerlo negrita */
+  text-transform: uppercase; /* Convertir a mayúsculas */
+  letter-spacing: 2px; /* Espaciado entre letras */
+  margin-right: auto; /* Mover a la izquierda */
+}
+
+.tq_nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-left: 25px; /* Espacio entre elementos */
+}
+
+ul li:first-child {
+  margin-left: 0; /* Eliminar espacio para el primer elemento */
+}
+
+.lnk {
+  font-size: 1rem; /* Tamaño del texto del enlace */
+  text-decoration: none; /* Quitar subrayado */
+  color: #ffffff; /* Color del texto */
+  transition: color 0.3s ease; /* Transición suave del color */
+}
+
+.lnk:hover {
+  color: #07ffff; /* Cambio de color al pasar el ratón */
+}
+
+.numero {
+  font-size: 1rem; /* Tamaño del texto */
+  font-weight: bold; /* Hacerlo negrita */
+  color: #07eeff; /* Color del texto */
+  margin-left: 10px; /* Mover a la esquina derecha */
+}
+
+/* ? Vista index.php */
+
+
+section {
+  display: flex;
+  /* height: 70vh; */
+  /* background-color:aqua; */
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  margin-top: 5rem;
+  /* background: blue; */
+  /* padding-top: 3%; */
+  justify-content: center;
+  align-items: center;
+}
+
+.container_img {
+  display: block;
+  width: 350px;
+  margin: 15px;
+}
+
+.container_img img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000000f1;
+}
+.lnkSesion{
+  background-color: #2bdaea;
+  cursor:default;
+}
+
+.container_info {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  background: #2bdaea;
+  padding: 1rem;
+  border-radius: 7px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.info_text {
+  display: block;
+  width: 50%;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+}
+.info_text p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.slider {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.slides {
+  display: flex;
+}
+
+.slides img {
+  width: 100%;
+  display: none;
+}
+
+.slides img.active {
+  display: block;
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+button.prev {
+  left: 0;
+}
+
+button.next {
+  right: 0;
+}
+
+/* ? igamen index */
+.index-container {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  overflow: hidden; /* Oculta el desbordamiento de la imagen */
+}
+
+.image-info-container {
+  position: relative;
+}
+
+.index-image {
+  width: 100%;
+  height: auto;
+}
+.info-overlay {
+  position: absolute;
+  top: 0;
+  left: 20px; /* Ajusta el valor según sea necesario */
+  width: calc(100% - 40px); /* Asegura que el contenedor ocupe el ancho completo con el margen */
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  overflow: hidden; /* Oculta cualquier desbordamiento de los pseudo-elementos */
+  border-radius: 10px; /* Borde redondeado */
+}
+
+.text-info {
+  position: absolute;
+  left: 70px; /* Ajusta el valor según sea necesario para mover más a la derecha */
+  top: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* Alinear elementos verticalmente */
+  width: 400px; /* Ancho deseado del cuadro de información */
+  z-index: 1; /* Asegura que el texto esté sobre el fondo */
+  color: white; /* Color de texto blanco */
+}
+
+.text-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("img\index.png"); /* URL de la imagen */
+  background-size: cover; /* Ajusta la imagen para que cubra completamente el contenedor */
+  filter: blur(10px); /* Efecto de desenfoque */
+  z-index: 0; /* Coloca el fondo detrás del texto */
+  border-radius: 10px; /* Borde redondeado */
+}
+
+.text-info::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(231, 224, 224, 0.263); /* Color de fondo semi-transparente */
+  z-index: 0; /* Coloca el fondo detrás del texto */
+  border-radius: 10px; /* Borde redondeado */
+}
+
+.text-info h2 {
+  margin: 0; /* Elimina el margen predeterminado */
+  font-size: 70px; /* Tamaño de fuente más grande */
+  color: #181717; /* Color para el título (rojo coral) */
+}
+
+.text-info h3 {
+  margin: 0; /* Elimina el margen predeterminado */
+  font-size: 20px; /* Tamaño de fuente más grande */
+  color: #050505; /* Color para el subtítulo (cian claro) */
+}
+
+.text-info p {
+  margin-top: auto; /* Empuja el párrafo hacia abajo para que esté alineado en la parte inferior */
+  font-size: 18px; /* Tamaño de fuente más grande */
+  color: #060605; /* Color para la descripción (amarillo) */
+}
+
+
+/* ? Modal */
+
+/* ? Modal */
+
+.modalIniciarSesion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  background-color: #111111bd;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s 0.6s;
+  --transform: translateY(-100vh);
+  --transition: transform 0.5s;
+}
+
+.modal--showIniciarSesion {
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity 0.6s;
+  --transform: translateY(0);
+  --transition: transform 0.6s 0.2s;
+}
+
+.modal__containerIniciarSesion {
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  max-height: 90%;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 3em 2.5em;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  grid-auto-columns: 100%;
+  transform: var(--transform);
+  transition: var(--transition);
+}
+
+.modal__titleIniciarSesion {
+  font-size: 2.5rem;
+}
+
+.modal__paragraphIniciarSesion {
+  margin-bottom: 10px;
+}
+
+.modal__imgIniciarSesion {
+  width: 90%;
+  max-width: 300px;
+}
+
+.formIniciarSesion {
+  display: block;
+  background-color: #2e86c169;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  /* border: 1px solid #0000002a; */
+  box-shadow: 0 0 3px #000;
+}
+
+.lblIniciarSesion {
+  font-size: 1.1rem;
+}
+
+input {
+  outline: none;
+  border-radius: 6px;
+  border: none;
+  border: 1px outset #85929e;
+}
+input:focus {
+  border: 1px transparent;
+  box-shadow: 0 0 5px #d8dbdd;
+  transition: all 0.5s;
+}
+
+.formIniciar {
+    display: inline-block;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+.formIniciar:active {
+    transform: translateY(3px) translateX(3px);
+    transition: all 0.2s;
+}
+
+
+/* ?  Registro de cita */
+
+
+.titulo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+/* Estilos para el título y subtítulo */
+
+.titulo-subtitulo {
+  text-align: left; /* Ajustar al lado izquierdo */
+  margin-bottom: 5px; /* Aumentar el margen inferior */
+  padding-left: 10px; /* Agregar un poco de espacio a la izquierda */
+}
+
+.titulo-subtitulo h2 {
+  font-size: 2.8rem; /* Tamaño de fuente más grande */
+  margin-bottom: 10px; /* Aumentar el margen inferior */
+  color: #0c0c0c; /* Color del título */
+}
+
+.titulo-subtitulo p {
+  font-size: 2rem; /* Tamaño de fuente más grande */
+  margin: 0; /* Eliminar el margen vertical */
+  color: #666; /* Color del subtítulo */
+}
+
+
+/* Estilos para la línea divisoria */
+.linea-divisoria {
+  width: 100%;
+  border-top: 1px solid #6a6767;
+  margin-bottom: 20px;
+}
+
+/* Estilos CSS completos */
+.modalRegistro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: flex;
+  opacity: 0;
+  z-index: 10000;
+  pointer-events: none;
+  transition: opacity 0.5s 0.6s;
+  --transform: translateY(-100vh);
+  --transition: transform 0.5s;
+}
+
+.modal--showRegistro {
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity 0.6s;
+  --transform: translateY(0);
+  --transition: transform 0.6s 0.2s;
+}
+
+.modal__containerRegistro {
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  max-height: 50%;
+  background-color: #6c6969;
+  border-radius: 6px;
+  padding: 3em 2.5em;
+  display: grid;
+  
+  gap: 1em;
+  place-items: center;
+  grid-auto-columns: 100%;
+  transform: var(--transform);
+  transition: var(--transition);
+}
+
+.modal__titleRegistro {
+  font-size: 2.5rem;
+}
+
+.formRegistrar {
+  display: block;
+  background-color: #2ec1b569;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 0 3px #000;
+}
+
+.lblRegistro {
+  font-size: 1.1rem;
+}
+
+.containerCitasComplete {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  margin: 6% auto 0;
+}
+
+.container_Cita {
+
+
+
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding: 10px; /* Reducir el relleno */
+  border-radius: 10px; /* Reducir el radio del borde */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem; /* Reducir el tamaño de fuente */
+  background: #f8f9fa;
+  border: 1px solid #000; /* Reducir el grosor del borde */
+  margin-bottom: 20px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+}
+.InsertDtsCita {
+  width: 80%;
+}
+
+.formCitas {
+  text-align: left;
+}
+
+.textInsert,
+.lblRegistro {
+  font-size: 1rem; /* Ajustar el tamaño de fuente */
+  margin-bottom: 8px; /* Reducir la separación entre textos */
+}
+
+.textDtsCitas,
+.textarea textarea {
+  width: calc(100% - 20px); /* Reducir el ancho y dejar espacio para el borde */
+  height: 40px; /* Ajustar la altura */
+  padding: 8px; /* Reducir el relleno */
+  margin-bottom: 15px; /* Reducir el margen inferior */
+  border: 1px solid #2c2b2b; /* Borde sólido */
+  border-radius: 6px; /* Redondear las esquinas */
+  box-sizing: border-box;
+  background-color: #f9f9f9; /* Color de fondo */
+}
+
+/* Estilos específicos para el área de texto */
+.textarea textarea {
+  height: 60px; /* Ajustar la altura del área de texto */
+}
+
+/* Estilos para los cuadros de texto de mostrar citas */
+.MostrarCitas {
+  width: 45%;
+  padding: 15px; /* Reducir el relleno */
+  border-radius: 6px; /* Redondear las esquinas */
+  background: #f8f9fa; /* Color de fondo */
+  border: 1px solid #221e1e; /* Borde sólido */
+  margin-bottom: 20px;
+  
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.MostrarCitas h2 {
+  font-size: 0.9rem; /* Tamaño de fuente */
+  margin-bottom: 20px; /* Ajuste del margen inferior */
+}
+
+/* Estilos para los textos encima de los cuadros de texto */
+.textInsert,
+.lblRegistro {
+  font-size: 1rem; /* Tamaño de fuente */
+  margin-bottom: 10px; /* Ajuste del margen inferior */
+}
+
+
+
+/* Estilos para el botón */
+#aggCita {
+  background-color: #668de9; /* Color de fondo */
+  color: #e7e3e3; /* Color del texto */
+  padding: 10px 20px; /* Aumentar el relleno */
+  border: none; /* Quitar borde */
+  border-radius: 5px; /* Redondear bordes */
+  font-size: 1.2rem; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar cursor al pasar el ratón */
+  transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+#aggCita:hover {
+  background-color: #1b908c; /* Cambiar color de fondo al pasar el ratón */
+}
+
+
+/* Estilos para el botón de alto contraste */
+.high_contrast_button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* ? TRATAMIENTOS */
+.titulo-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+/* ? TAJUSTE DE IMANGES */
+
+body {
+ 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.treatment {
+  width: 300px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.treatment img {
+  width: 100%;
+  border-bottom: 2px solid #1ed7d7;
+}
+
+.info {
+  padding: 50px;
+}
+
+.info h2 {
+  color: #131617;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.info p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.2;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.treatment {
+  width: 250px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.treatment img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+
+  
+}
+
+.treatment img:hover {
+  transform: scalse(1.1);
+}
+
+.info {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 50px;
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+/* TRATAMIENTOS*/
+
+
+
+.high_contrast_button button {
+  background-color: #70ecaa;
+  color: white;
+  width: 70px; /* Reducir el ancho del botón */
+  height: 70px; /* Reducir la altura del botón */
+  padding: 0; /* Eliminar el relleno del botón */
+  border: none;
+  border-radius: 100%; /* Hace que el botón tenga forma de círculo */
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Agrega transición para la sombra */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+}
+
+.high_contrast_button button:hover {
+  background-color: #1e87bf;
+  box-shadow: 0 6px 8px rgba(9, 9, 9, 0.2); /* Incrementa la sombra al pasar el cursor */
+}
+
+.high_contrast_button img {
+  width: 50%; /* Ajusta el tamaño del icono */
+  height: auto;
+}
+
+/* imagen de anuncio */
+img {
+  max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+  height: auto; /* Mantiene la proporción de aspecto de la imagen */
+  display: block; /* Asegura que la imagen no tenga espacios adicionales */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+.titulo {
+  text-align: center; /* Centra el texto */
+  font-size: 36px; /* Tamaño de la fuente */
+  color: #080809; /* Color del texto */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  margin-top: 50px; /* Margen superior */
+  font-family: Arial, sans-serif; /* Otra fuente */
+  padding: 20px; /* Agrega algo de espacio alrededor del texto */
+}
+
+/* Estilos para el diseño de la sección de conocenos */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Para ocultar el desplazamiento horizontal */
+}
+
+.conocenos-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Anchura del viewport */
+  height: 100vh; /* Altura del viewport */
+  object-fit: 100px; /* Ajusta la imagen para cubrir el contenedor manteniendo la relación de aspecto */
+  z-index: -1; /* Coloca la imagen detrás del contenido */
+}
+
+
+
+
+.conocenos-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+/* SEPARECIONES */
+.image-info-container {
+  margin-bottom: 20px; /* Agrega un margen inferior de 20px entre la imagen y los botones */
+}
+
+.photo-container {
+  margin-top: 20px; /* Agrega un margen superior de 20px entre los botones y el siguiente contenido */
+}
+
+/* Estilos para el diseño de la sección de conocenos */
+
+.conocenos-img {
+  flex: 1;
+  padding-left: 20px; /* Espacio entre la información y la imagen */
+}
+
+.conocenos-img img {
+  width: 45%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: auto;
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.conocenos-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.conocenos-info p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.conocenos-content {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.conocenos-info  {
+  flex: 1;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente las fotos */
+  align-items: center; /* Alinear verticalmente las fotos */
+  margin: 0 auto; /* Centrar el contenedor horizontalmente */
+  max-width: 1000px; /* Ancho máximo del contenedor */
+}
+
+.photo {
+  margin: 0 50px; /* Espacio entre cada foto */
+}
+
+.photo img {
+  width: 130px; /* Tamaño fijo para todas las imágenes */
+  height: auto;
+}
+.button p {
+  font-size: 50px; /* Ajusta el tamaño de fuente según sea necesario */
+}
+
+.button {
+  display: inline-block;
+  background-color: transparent; /* Color de fondo transparente */
+  color: #090a09; /* Color del texto */
+  text-align: center;
+  padding: 10px 20px; /* Espacio interior del botón, aumenta el tamaño del botón */
+  text-decoration: none; /* Quita el subrayado del enlace */
+  border-radius: 0; /* Borde cuadrado */
+  transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+  font-family: Arial, sans-serif; /* Tipo de letra */
+  font-size: 40px; /* Tamaño de fuente aumentado */
+  font-weight: bold; /* Texto en negrita */
+  
+}
+.button p {
+  font-size: 24px; /* Tamaño de fuente aumentado para el título del botón */
+}
+
+.button:hover {
+  background-color: #838f8f; /* Cambia el color de fondo al pasar el mouse */
+  color: rgb(14, 14, 14); /* Cambia el color del texto al pasar el mouse */
+}
+
+.photo p {
+  margin-top: 5px; /* Espacio entre la imagen y el título */
+  text-align: center;
+  font-size: 12px; /* Tamaño del texto del título */
+}
+
+
+.section {
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-top: 50px; /* Espacio entre el contenedor de fotos y el nuevo apartado */
+}
+
+
+
+/* AGREGAR UN NUEVO TRATAMIENTO  */
+.formulario-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+  text-align: center;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.formulario input[type="text"],
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Estilo para el botón "Seleccionar Imagen" */
+.formulario button[type="button"] {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #7e8185;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+/* Estilo para el botón "Agregar Tratamiento" */
+.formulario .btn-agregar {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #132ce4; /* Cambiado el color de fondo */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+/* Cambio de color de fondo en hover para ambos botones */
+.formulario button[type="button"]:hover {
+  background-color: #3c51ae;
+}
+
+.formulario .btn-agregar:hover {
+  background-color: #0f2dd7; /* Nuevo color de fondo en hover */
+}
+
+
+
+
+
+
+/* INDEX TRATAMIETNOS */
+.section-tratamientos h2 {
+  font-size: 36px; /* Tamaño de fuente aumentado para el título */
+  font-weight: bold; /* Hace que el título sea más relevante */
+  color: #333; /* Cambia el color del título si es necesario */
+  text-transform: uppercase; /* Convierte el texto del título a mayúsculas */
+  margin-bottom: 10px; /* Añade espacio debajo del título */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Añade una sombra suave al texto */
+  padding-bottom: 1px; /* Añade espacio entre el texto y el borde inferior */
+}
+
+.section-tratamientos p {
+  font-size: 50px; /* Tamaño de fuente aumentado para el subtítulo */
+  font-weight: bold; /* Puedes ajustar el peso de la fuente según sea necesario */
+  color: #444; /* Cambia el color del subtítulo si es necesario */
+  margin-bottom: 20px; /* Añade más espacio debajo del subtítulo */
+  padding: 10px; /* Añade espacio interno */
+  border-radius: 10px; /* Agrega bordes redondeados */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Añade una sombra suave al texto */
+ 
+}
+
+/* FOTOS DE TRATAMIENTOS */
+
+
+/* Estilos para el nuevo apartado de tratamientos dentales */
+.section-tratamientos {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.section-tratamientos h2 {
+  font-size: 24px;
+}
+
+.section-tratamientos p {
+  font-size: 18px;
+}
+
+.photo-container-tratamientos {
+  display: flex;
+  justify-content: space-between; /* Distribuir las fotos uniformemente */
+  margin-top: 40px; /* Espacio superior */
+  margin-bottom: 30px; /* Espacio inferior */
+}
+
+.photo-tratamientos {
+  flex: 1; /* Las fotos ocupan el mismo espacio dentro del contenedor */
+  position: relative; /* Permite posicionar el texto */
+  text-align: center; /* Centra el texto horizontalmente */
+  margin: 10 5px 10px; /* Espacio entre las fotos */
+}
+
+.photo-tratamientos img {
+  width: 300px; /* Ajusta el tamaño de las imágenes */
+  height: auto;
+  border-radius: 20px; /* Borde redondeado */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.photo-tratamientos p {
+  position: absolute;
+  bottom: 50%; /* Posiciona el texto en la mitad inferior de la imagen */
+  left: 50%;
+  transform: translate(-50%, 50%); /* Centra el texto horizontal y verticalmente */
+  font-size: 16px;
+  color: #000000;
+  background-color: rgba(249, 230, 230, 0.7);
+  padding: 5px 10px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.photo-tratamientos:hover p {
+  opacity: 1;
+}
+
+.button-tratamiento {
+  display: inline-block;
+  margin-top: 20px; /* Espacio entre el botón y el texto */
+  padding: 12px 24px; /* Espacio interior del botón */
+  font-size: 18px; /* Tamaño de fuente */
+  color: #0a0909; /* Color del texto */
+  background-color: #e3e8e9; /* Color de fondo del botón */
+  border: 2px solid #111211; /* Borde del mismo color que el fondo */
+  border-radius: 30px; /* Borde redondeado */
+  cursor: pointer; /* Cursor al pasar el mouse */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave del color de fondo y texto */
+  text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.button-tratamiento:hover {
+  background-color: #39f5e2; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.button-tratamiento:active {
+  background-color: #3de5c4; /* Cambia el color de fondo cuando se presiona el botón */
+}
+
+/* DE TU CONFIANZA */
+.section-dentista {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px; /* Separación superior */
+}
+
+.left-content {
+  flex: 1;
+  margin-right: 20px; /* Separación entre el contenido izquierdo y derecho */
+}
+
+.right-content {
+  flex: 3; /* Aumentamos el espacio para el cuadro de descripción */
+}
+
+.title h2 {
+  font-size: 35px; /* Aumentamos ligeramente el tamaño del título */
+  font-weight: bold;
+  margin-bottom: 15px; /* Espacio debajo del título */
+  color: #333; /* Cambiamos el color del texto */
+  text-transform: uppercase; /* Convertimos el texto en mayúsculas */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Agregamos un efecto de sombra al texto */
+  text-align: justify; /* Justificamos el texto */
+}
+
+.image {
+  margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+.image img {
+  width: 100%; /* Ajustamos el ancho de la imagen al 100% */
+  height: auto; /* Altura automática para mantener la proporción */
+  max-width: 300px; /* Limitamos el ancho máximo de la imagen */
+  border-radius: 15px; /* Aumentamos el radio del borde para un diseño más suave */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Agregamos una sombra más pronunciada */
+  transition: transform 0.3s ease; /* Agregamos una transición suave al efecto de escala */
+}
+
+.image img:hover {
+  transform: scale(1.05); /* Escalamos la imagen ligeramente al pasar el mouse */
+}
+
+.description {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%; /* Ajustamos el ancho del cuadro de descripción */
+  text-align: justify; /* Justificamos el texto dentro del cuadro */
+  margin-left: 100px; /* Movemos más el cuadro hacia la derecha */
+  background-color: rgba(255, 255, 255, 0.5); /* Hacemos el fondo semi-transparente */
+}
+
+.description p {
+  font-size: 13px; /* Reducimos el tamaño del texto */
+  line-height: 1.4; /* Espacio entre líneas de los párrafos */
+  margin-bottom: 10px; /* Espacio añadido entre los párrafos */
+}
+
+/* ubicacion */
+
+/* Estilos para la sección de Ubicación */
+.ubicacion-seccion {
+  max-width: 1000px;
+  margin: 150px auto; /* Espacio superior e inferior */
+  border: 2px solid #ccc; /* Borde del contenedor */
+  border-radius: 10px; /* Borde redondeado */
+  overflow: hidden; /* Evita que los elementos internos sobresalgan */
+}
+
+/* Contenedor para los elementos de la sección de Ubicación */
+.contenido-contenedor {
+  display: flex;
+  flex-direction: column; /* Apilar los elementos verticalmente */
+}
+
+/* Contenedor del mapa */
+.mapa-contenedor {
+  padding: 20px; /* Espaciado interno */
+  background-color: #f0f0f0; /* Color de fondo gris */
+}
+
+/* Contenedor de información */
+.info-contenedor {
+  padding: 20px; /* Espaciado interno */
+}
+
+.info-contenedor h2 {
+  font-size: 28px; /* Tamaño del título aumentado */
+  font-weight: bold; /* Hace que el título sea más relevante */
+  margin-bottom: 15px; /* Espacio debajo del título */
+  color: #333; /* Color del título */
+}
+
+.info-contenedor p {
+  font-size: 18px; /* Tamaño del texto aumentado */
+  line-height: 1.6; /* Espaciado entre líneas */
+  margin-bottom: 25px; /* Espacio debajo del texto */
+}
+
+/* Estilos para el botón "Clínica Dental" */
+.boton-personalizado {
+  display: inline-block;
+  padding: 20px 40px; /* Aumentamos el padding para hacer el botón más grande */
+  background-color: #e2e7ed; /* Color de fondo del botón */
+  color: #040404; /* Color del texto del botón */
+  border: 2px solid #0f1010; /* Borde del botón */
+  border-radius: 30px; /* Esquinas redondeadas */
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+  cursor: pointer; /* Cambio de cursor al pasar sobre el botón */
+  margin-bottom: 20px; /* Espacio debajo del botón */
+}
+
+.boton-personalizado:hover {
+  background-color: #2f55dd; /* Cambio de color al pasar el mouse */
+  color: #fff; /* Cambio de color del texto al pasar el mouse */
+}
+
+
+/* SOLICIRAR CITA" */
+/* Estilos para la sección de Servicio de Urgencias Dentales */
+.urgencias-dentales-seccion {
+  max-width: 1000px;
+  margin: 50px auto; /* Espacio superior e inferior */
+}
+
+/* Contenedor de la descripción */
+.descripcion-contenedor {
+  padding: 20px; /* Espaciado interno */
+  border: 2px solid #ccc; /* Borde del contenedor */
+  border-radius: 10px; /* Borde redondeado */
+}
+
+.descripcion-contenedor h2 {
+  font-size: 24px; /* Tamaño del título */
+  margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.descripcion-contenedor p {
+  font-size: 16px; /* Tamaño del texto */
+  margin-bottom: 20px; /* Espacio debajo del texto */
+}
+
+/* Estilos para el botón de solicitar cita */
+/* Estilos para la sección de Servicio de Urgencias Dentales */
+.urgencias-dentales-seccion {
+  max-width: 1000px;
+  margin: 50px auto; /* Espacio superior e inferior */
+}
+
+/* Contenedor de la descripción */
+.descripcion-contenedor {
+  text-align: center; /* Centrar el contenido */
+}
+
+.descripcion-contenedor h2 {
+  font-size: 24px; /* Tamaño del título */
+  margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.descripcion-contenedor p {
+  font-size: 16px; /* Tamaño del texto */
+  margin-bottom: 20px; /* Espacio debajo del texto */
+}
+
+/* Estilos para el botón de solicitar cita */
+/* Estilos para la sección de Servicio de Urgencias Dentales */
+.urgencias-dentales-seccion {
+  max-width: 1000px;
+  margin: 50px auto; /* Espacio superior e inferior */
+}
+
+/* Contenedor de la descripción */
+.descripcion-contenedor {
+  text-align: center; /* Centrar el contenido */
+}
+
+.descripcion-contenedor h2 {
+  font-size: 24px; /* Tamaño del título */
+  margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.descripcion-contenedor p {
+  font-size: 16px; /* Tamaño del texto */
+  margin-bottom: 20px; /* Espacio debajo del texto */
+}
+
+/* Estilos para la sección de Servicio de Urgencias Dentales */
+.urgencias-dentales-seccion {
+  max-width: 1000px;
+  margin: 50px auto; /* Espacio superior e inferior */
+}
+
+/* Contenedor de la descripción */
+.descripcion-contenedor {
+  text-align: center; /* Centrar el contenido */
+}
+
+.descripcion-contenedor h2 {
+  font-size: 24px; /* Tamaño del título */
+  margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.descripcion-contenedor p {
+  font-size: 16px; /* Tamaño del texto */
+  margin-bottom: 20px; /* Espacio debajo del texto */
+}
+
+/* Estilos para el botón de solicitar cita */
+.boton-urgencias {
+  display: inline-block;
+  padding: 15px 30px; /* Tamaño del botón */
+  background-color: #0579f6; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none;
+  border-radius: 20px; /* Esquinas redondeadas */
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  cursor: pointer; /* Cambio de cursor al pasar sobre el botón */
+}
+
+/* Estilos para la sección de Servicio de Urgencias Dentales */
+.urgencias-dentales-seccion {
+  max-width: 1000px;
+  margin: 50px auto; /* Espacio superior e inferior */
+  margin-bottom: 150px; /* Margen inferior para separarlo del pie de página */
+}
+
+/* Estilo para el botón eliminar */
+.eliminar-btn {
+    background-color: #ff3333; /* Rojo */
+    color: white; /* Texto blanco para contrastar */
+    padding: 10px 20px; /* Espacio alrededor del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre él */
+}
+
+/* Estilo para cuando el cursor está sobre el botón */
+.eliminar-btn:hover {
+    background-color: #cc0000; /* Rojo más oscuro al pasar el cursor */
+}
+/* Estilo para el botón de eliminar */
+.eliminar-btn {
+  background-color: #ff3333; /* Rojo */
+  color: white; /* Texto blanco para contrastar */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espacio alrededor del texto */
+  cursor: pointer; /* Cambia el cursor al pasar sobre él */
+}
+
+/* Estilo para cuando el cursor está sobre el botón */
+.eliminar-btn:hover {
+  background-color: #cc0000; /* Rojo más oscuro al pasar el cursor */
+}
+/* Estilo para el botón Agregar Cita */
+#AggCita {
+  background-color: #007bff; /* Color azul */
+  color: white; /* Texto blanco para contrastar */
+  padding: 10px 20px; /* Espacio alrededor del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre él */
+}
+
+/* Estilo para cuando el cursor está sobre el botón */
+#AggCita:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+}
+
+
+
+
